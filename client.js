@@ -18,13 +18,13 @@ const connect = function () {
     //   conn.write("Move: up");
     // }, 500)  
    
-
+    
   });
-
-
+  
   conn.on('data', (data) => {
     console.log('Server says: ', data)
   });
+  return conn;
 };
 
 
