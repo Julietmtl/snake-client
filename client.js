@@ -1,7 +1,7 @@
 const net = require("net");
 
 
-const connect = function () {
+const connect = function() {
   const conn = net.createConnection({
     host: "135.23.223.133",
     port: "50542",
@@ -16,13 +16,13 @@ const connect = function () {
     // conn.write("Move: up");
     // setInterval(() => {
     //   conn.write("Move: up");
-    // }, 500)  
+    // }, 500)
    
     
   });
   
   conn.on('data', (data) => {
-    console.log('Server says: ', data)
+    console.log('Server says: ', data);
   });
   return conn;
 };
