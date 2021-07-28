@@ -1,5 +1,6 @@
 const net = require("net");
 
+
 const connect = function () {
   const conn = net.createConnection({
     host: "135.23.223.133",
@@ -12,6 +13,12 @@ const connect = function () {
   conn.on('connect', () => {
     console.log('Successfully connected to game server');
     conn.write("Name: JUL");
+    // conn.write("Move: up");
+    // setInterval(() => {
+    //   conn.write("Move: up");
+    // }, 500)  
+   
+
   });
 
 
